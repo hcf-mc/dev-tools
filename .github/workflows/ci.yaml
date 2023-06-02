@@ -1,0 +1,17 @@
+name: "ci"
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  notify:
+    name: "notify-parents"
+    runs-on: ubuntu-latest
+    steps:
+      # Say hello until we have a real action
+      - name: Say hello
+        run: |
+          echo "Hello world"
